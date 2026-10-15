@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events | Campus Events</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div class="container nav"><a class="brand" href="index.html">🎓 Campus <span>Events</span></a>
+            <nav><a class="" href="index.html">Home</a><a class="" href="about.html">About</a><a class="active"
+                    href="events.html">Events</a><a class="" href="schedule.html">Schedule</a><a class=""
+                    href="register.html">Register</a><a class="" href="register.html">Contact</a></nav>
+        </div>
+    </header>
+    <main class="container">
+        <div class="page-title">
+            <h1>All Events</h1>
+            <p>Explore upcoming events and be a part of exciting experiences.</p>
+        </div>
+        <div class="section-head"><span></span><input class="search" id="search" type="search"
+                placeholder="⌕ Search events..." oninput="filterEvents()"></div>
+        <section class="grid" id="eventGrid">
+            <article class="card"><img
+                    src="https://images.unsplash.com/photo-1540575467063-178a50c2df87?auto=format&fit=crop&w=900&q=80"
+                    alt="Tech Fest 2026">
+                <div class="card-body"><span class="badge technical">Technical</span>
+                    <h3>Tech Fest 2026</h3>
+                    <div class="meta">◷ Oct 15, 2026　 •　⌖ Auditorium</div>
+                    <p>Explore innovation, participate in hackathons, and showcase your skills.</p><a class="btn"
+                        href="event-details.html">View Details →</a>
+                </div>
+            </article>
+            <article class="card"><img
+                    src="https://images.unsplash.com/photo-1506157786151-b8491531f063?auto=format&fit=crop&w=900&q=80"
+                    alt="Cultural Day">
+                <div class="card-body"><span class="badge cultural">Cultural</span>
+                    <h3>Cultural Day</h3>
+                    <div class="meta">◷ Oct 20, 2026　 •　⌖ Main Hall</div>
+                    <p>Celebrate talent, creativity and diversity with music, dance and art performances.</p><a
+                        class="btn" href="event-details.html">View Details →</a>
+                </div>
+            </article>
+            <article class="card"><img
+                    src="https://images.unsplash.com/photo-1461896836934-ffe607ba8211?auto=format&fit=crop&w=900&q=80"
+                    alt="Inter-College Sports Meet">
+                <div class="card-body"><span class="badge sports">Sports</span>
+                    <h3>Inter-College Sports Meet</h3>
+                    <div class="meta">◷ Oct 28, 2026　 •　⌖ Sports Ground</div>
+                    <p>Compete, collaborate and showcase your sportsmanship.</p><a class="btn"
+                        href="event-details.html">View Details →</a>
+                </div>
+            </article>
+            <article class="card"><img
+                    src="https://images.unsplash.com/photo-1485827404703-89b55fcc595e?auto=format&fit=crop&w=900&q=80"
+                    alt="AI Workshop">
+                <div class="card-body"><span class="badge workshop">Workshop</span>
+                    <h3>AI Workshop</h3>
+                    <div class="meta">◷ Nov 05, 2026　 •　⌖ Seminar Hall</div>
+                    <p>Learn about AI tools and real-world applications.</p><a class="btn"
+                        href="event-details.html">View Details →</a>
+                </div>
+            </article>
+            <article class="card"><img
+                    src="https://images.unsplash.com/photo-1516035069371-29a1b244cc32?auto=format&fit=crop&w=900&q=80"
+                    alt="Photography Contest">
+                <div class="card-body"><span class="badge cultural">Cultural</span>
+                    <h3>Photography Contest</h3>
+                    <div class="meta">◷ Nov 12, 2026　 •　⌖ Open Grounds</div>
+                    <p>Capture moments and showcase your creativity.</p><a class="btn" href="event-details.html">View
+                        Details →</a>
+                </div>
+            </article>
+            <article class="card"><img
+                    src="https://images.unsplash.com/photo-1475721027785-f74eccf877e2?auto=format&fit=crop&w=900&q=80"
+                    alt="Career Guidance Talk">
+                <div class="card-body"><span class="badge technical">Technical</span>
+                    <h3>Career Guidance Talk</h3>
+                    <div class="meta">◷ Nov 18, 2026　 •　⌖ Auditorium</div>
+                    <p>Get insights from industry experts about future opportunities.</p><a class="btn"
+                        href="event-details.html">View Details →</a>
+                </div>
+            </article>
+        </section>
+    </main>
+    <script>function filterEvents() {let q = document.getElementById('search').value.toLowerCase(); document.querySelectorAll('#eventGrid .card').forEach(c => c.style.display = c.innerText.toLowerCase().includes(q) ? '' : 'none')}</script>
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div>
+                    <h3>🎓 Campus Events</h3>
+                    <p>Bringing students together through learning, creativity and collaboration.</p>
+                </div>
+                <div>
+                    <h3>Quick Links</h3><a href="index.html">Home</a><a href="about.html">About</a><a
+                        href="events.html">Events</a><a href="schedule.html">Schedule</a><a
+                        href="register.html">Register</a>
+                </div>
+                <div>
+                    <h3>Follow Us</h3>
+                    <p>● Facebook　◎ Instagram　in LinkedIn</p>
+                </div>
+            </div>
+            <div class="copyright">© 2026 Campus Events. All rights reserved.</div>
+        </div>
+    </footer>
+</body>
+
+</html>
