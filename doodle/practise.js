@@ -44,3 +44,24 @@ let num2=[10, 50, 15, 5];
 let result2=num2.every((n)=> { return n<30; }); //every() - checks if all elements satisfy the condition
 console.log(result2);
 
+const student = { //object literal creation
+  name: "John",
+  age: 20
+};
+console.log(student.name);//accessing object properties using dot notation
+console.log(student["age"]);//accessing object properties using bracket notation
+student.age = 21; //updating object property
+console.log(student.age);
+student.city = "New York"; //adding new property to object
+console.log(student.city);
+console.log(student);
+
+const student1 = { //nested object
+  name: "Alice",
+  address: {
+    street: "123 Main St",
+    city: "Los Angeles"
+  }
+};
+console.log(student1.address.city); //accessing nested object property
+console.log(student1["address"]["street"]); //accessing nested object property using bracket notation
